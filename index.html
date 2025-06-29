@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>暮雪微晴 · GitHub Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/200378056?v=4" alt="Avatar" class="avatar">
+    <div>
+      <h1>暮雪微晴</h1>
+      <p class="bio">作者:Twilightsnow2009</p>
+    </div>
+  </header>
+
+  <!-- 搜索框 -->
+  <form class="search-container" action="https://github.com/search" method="get" target="_blank">
+    <input
+      class="search-input"
+      type="text"
+      name="q"
+      placeholder="搜索整个GitHub…"
+      aria-label="Search GitHub repositories"
+    >
+    <input type="hidden" name="type" value="repositories">
+    <button class="search-button" type="submit">🔍</button>
+  </form>
+
+  <!-- 仓库列表 -->
+  <div class="repo-list">
+    <p class="bio">以下将展示部分仓库</p>
+
+    <div class="repo-card">
+      <h3 class="repo-title"><a href="https://github.com/Twilightsnow2009/AnonNav">AnonNav</a></h3>
+      <p class="repo-desc">一个简单的导航工具，允许用户通过多个搜索引擎进行搜索，并支持自定义搜索引擎的添加和删除。</p>
+      <div class="repo-meta"><span>JavaScript</span><span>HTML</span></div>
+    </div>
+
+    <div class="repo-card">
+      <h3 class="repo-title"><a href="https://github.com/Twilightsnow2009/hash-algorithm">hash-algorithm</a></h3>
+      <p class="repo-desc">一个用 Python 编写的简单哈希算法实现，支持加盐和多次哈希，适用于存储敏感信息。</p>
+      <div class="repo-meta"><span>Python</span><span>Security</span></div>
+    </div>
+
+    <div class="repo-card">
+      <h3 class="repo-title"><a href="https://github.com/Twilightsnow2009/CSDN-Search-Result-Blocker">CSDN-Search-Result-Blocker</a></h3>
+      <p class="repo-desc">基于 Tampermonkey 的用户脚本，自动移除搜索引擎结果中的 CSDN 链接。</p>
+      <div class="repo-meta"><span>JavaScript</span><span>Userscript</span></div>
+    </div>
+
+    <div class="repo-card">
+      <h3 class="repo-title"><a href="https://github.com/Twilightsnow2009/GitZipper">GitZipper</a></h3>
+      <p class="repo-desc">简单易用的 GitHub 仓库下载工具，支持下载整个仓库或特定文件夹。</p>
+      <div class="repo-meta"><span>JavaScript</span><span>GitHub API</span></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 暮雪微晴 版权所有</p>
+    <p>托管于 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+    <a href="https://github.com/" target="_blank" title="访问 GitHub 官方网站">
+      <svg class="github-logo" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </a>
+  </footer>
+
+  <!-- 引入外部 JS（当前为空） -->
+  <script src="script.js"></script>
+</body>
+</html>
